@@ -26,7 +26,9 @@ export class EmployeeAddPresentationComponent implements OnInit {
   })
 
   onSubmit(){
-
+    console.log(this.employeeForm.value);
   }
-
+  reset(){
+    this.employeeForm.reset();
+  }
 }
