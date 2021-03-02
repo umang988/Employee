@@ -13,6 +13,9 @@ export class EmployeeAddContainerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  employeeData(employeeForm : FormGroup){
+    console.log(employeeForm);
+    
+  }
 
 }

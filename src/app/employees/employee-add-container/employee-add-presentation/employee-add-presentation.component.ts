@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDatepicker } from '@angular/material/datepicker';
+import { EmployeeAddPresenterService } from '../employee-add-presenter/employee-add-presenter.service';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-employee-add-presentation',
@@ -9,24 +11,25 @@ import { MatDatepicker } from '@angular/material/datepicker';
 })
 export class EmployeeAddPresentationComponent implements OnInit {
 
-  constructor(private formBuilder : FormBuilder) { }
+  public employeeForm : FormGroup;
+
+  @Output() public employeeData : EventEmitter<any> = new EventEmitter();
+
+  constructor(private employeeAddPresenterService : EmployeeAddPresenterService) {
+    this.employeeAddPresenterService.bindForm();
+   }
 
   ngOnInit(): void {
+    this.employeeAddPresenterService.employee$.subscribe(
+      (employee) => this.employeeData.emit(employee)
+    )
+
   }
 
-  employeeForm : FormGroup = this.formBuilder.group({
-    fullName : [null,[Validators.required, Validators.pattern('[A-Za-z ]{1,32}')]],
-    email : [null, Validators.required],
-    mobile : [null,Validators.maxLength(10)],
-    city : [null,Validators.required],
-    gender : [null,Validators.required],
-    department : [null,Validators.required],
-    hireDate : [null,Validators.required],
-    permanentEmployee : [null]
-  })
+  
 
   onSubmit(){
-    console.log(this.employeeForm.value);
+    this.employeeAddPresenterService.employeeDetail(this.employeeForm);
   }
   reset(){
     this.employeeForm.reset();
