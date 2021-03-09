@@ -16,20 +16,18 @@ export class EmployeeAddPresentationComponent implements OnInit {
   @Output() public employeeData : EventEmitter<any> = new EventEmitter();
 
   constructor(private employeeAddPresenterService : EmployeeAddPresenterService) {
-    this.employeeAddPresenterService.bindForm();
+    this.employeeForm = this.employeeAddPresenterService.bindForm();
    }
 
   ngOnInit(): void {
-    this.employeeAddPresenterService.employee$.subscribe(
-      (employee) => this.employeeData.emit(employee)
-    )
+    // this.employeeAddPresenterService.employee$.subscribe(
+    //   (employee) => this.employeeData.emit(employee)
+    // )
 
   }
-
-  
-
   onSubmit(){
-    this.employeeAddPresenterService.employeeDetail(this.employeeForm);
+    this.employeeData.emit(this.employeeForm.value)
+    // this.employeeAddPresenterService.employeeDetail(this.employeeForm);
   }
   reset(){
     this.employeeForm.reset();

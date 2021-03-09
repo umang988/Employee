@@ -1,153 +1,187 @@
 {
-    "Employee" : [
-        {
-            "id":1,
-            "fullName" : "Umang Tandel",
-            "gender" : "Male",
-            "email" : "umang@gmail.com",
-            "mobile" : 4569875632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "2/2/2021"
-        },
-        {
-            "id":2,
-            "fullName" : "Pratik Tandel",
-            "gender" : "Male",
-            "email" : "pratik@gmail.com",
-            "mobile" : 4563345632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "10/2/2021"
-        },
-        {
-            "id":3,
-            "fullName" : "Nidhi Patel",
-            "gender" : "Female",
-            "email" : "nidhi@gmail.com",
-            "mobile" : 1234575632,
-            "city" : "Valsad",
-            "department" : ".net",
-            "hireDate" : "2/3/2021"
-        },
-        {
-            "id":4,
-            "fullName" : "Umang Tandel",
-            "gender" : "Male",
-            "email" : "umang@gmail.com",
-            "mobile" : 4569875632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "2/2/2021"
-        },
-        {
-            "id":5,
-            "fullName" : "Pratik Tandel",
-            "gender" : "Male",
-            "email" : "pratik@gmail.com",
-            "mobile" : 4563345632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "10/2/2021"
-        },
-        {
-            "id":6,
-            "fullName" : "Nidhi Patel",
-            "gender" : "Female",
-            "email" : "nidhi@gmail.com",
-            "mobile" : 1234575632,
-            "city" : "Valsad",
-            "department" : ".net",
-            "hireDate" : "2/3/2021"
-        },{
-            "id":7,
-            "fullName" : "Umang Tandel",
-            "gender" : "Male",
-            "email" : "umang@gmail.com",
-            "mobile" : 4569875632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "2/2/2021"
-        },
-        {
-            "id":8,
-            "fullName" : "Pratik Tandel",
-            "gender" : "Male",
-            "email" : "pratik@gmail.com",
-            "mobile" : 4563345632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "10/2/2021"
-        },
-        {
-            "id":9,
-            "fullName" : "Nidhi Patel",
-            "gender" : "Female",
-            "email" : "nidhi@gmail.com",
-            "mobile" : 1234575632,
-            "city" : "Valsad",
-            "department" : ".net",
-            "hireDate" : "2/3/2021"
-        },{
-            "id":10,
-            "fullName" : "Umang Tandel",
-            "gender" : "Male",
-            "email" : "umang@gmail.com",
-            "mobile" : 4569875632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "2/2/2021"
-        },
-        {
-            "id":11,
-            "fullName" : "Pratik Tandel",
-            "gender" : "Male",
-            "email" : "pratik@gmail.com",
-            "mobile" : 4563345632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "10/2/2021"
-        },
-        {
-            "id":12,
-            "fullName" : "Nidhi Patel",
-            "gender" : "Female",
-            "email" : "nidhi@gmail.com",
-            "mobile" : 1234575632,
-            "city" : "Valsad",
-            "department" : ".net",
-            "hireDate" : "2/3/2021"
-        },
-        {
-            "id":13,
-            "fullName" : "Umang Tandel",
-            "gender" : "Male",
-            "email" : "umang@gmail.com",
-            "mobile" : 4569875632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "2/2/2021"
-        },
-        {
-            "id":14,
-            "fullName" : "Pratik Tandel",
-            "gender" : "Male",
-            "email" : "pratik@gmail.com",
-            "mobile" : 4563345632,
-            "city" : "Valsad",
-            "department" : "Angular",
-            "hireDate" : "10/2/2021"
-        },
-        {
-            "id":15,
-            "fullName" : "Nidhi Patel",
-            "gender" : "Female",
-            "email" : "nidhi@gmail.com",
-            "mobile" : 1234575632,
-            "city" : "Valsad",
-            "department" : ".net",
-            "hireDate" : "2/3/2021"
-        }
-
-    ]
+  "Employee": [
+    {
+      "id": 1,
+      "fullName": "Umang Tandel",
+      "gender": "Male",
+      "email": "umang@gmail.com",
+      "mobile": 4569875632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "2/2/2021"
+    },
+    {
+      "id": 2,
+      "fullName": "Pratik Tandel",
+      "gender": "Male",
+      "email": "pratik@gmail.com",
+      "mobile": 4563345632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "10/2/2021"
+    },
+    {
+      "id": 3,
+      "fullName": "Nidhi Patel",
+      "gender": "Female",
+      "email": "nidhi@gmail.com",
+      "mobile": 1234575632,
+      "city": "Valsad",
+      "department": ".net",
+      "hireDate": "2/3/2021"
+    },
+    {
+      "id": 4,
+      "fullName": "Umang Tandel",
+      "gender": "Male",
+      "email": "umang@gmail.com",
+      "mobile": 4569875632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "2/2/2021"
+    },
+    {
+      "id": 5,
+      "fullName": "Pratik Tandel",
+      "gender": "Male",
+      "email": "pratik@gmail.com",
+      "mobile": 4563345632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "10/2/2021"
+    },
+    {
+      "id": 6,
+      "fullName": "Nidhi Patel",
+      "gender": "Female",
+      "email": "nidhi@gmail.com",
+      "mobile": 1234575632,
+      "city": "Valsad",
+      "department": ".net",
+      "hireDate": "2/3/2021"
+    },
+    {
+      "id": 7,
+      "fullName": "Umang Tandel",
+      "gender": "Male",
+      "email": "umang@gmail.com",
+      "mobile": 4569875632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "2/2/2021"
+    },
+    {
+      "id": 8,
+      "fullName": "Pratik Tandel",
+      "gender": "Male",
+      "email": "pratik@gmail.com",
+      "mobile": 4563345632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "10/2/2021"
+    },
+    {
+      "id": 9,
+      "fullName": "Nidhi Patel",
+      "gender": "Female",
+      "email": "nidhi@gmail.com",
+      "mobile": 1234575632,
+      "city": "Valsad",
+      "department": ".net",
+      "hireDate": "2/3/2021"
+    },
+    {
+      "id": 10,
+      "fullName": "Umang Tandel",
+      "gender": "Male",
+      "email": "umang@gmail.com",
+      "mobile": 4569875632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "2/2/2021"
+    },
+    {
+      "id": 11,
+      "fullName": "Pratik Tandel",
+      "gender": "Male",
+      "email": "pratik@gmail.com",
+      "mobile": 4563345632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "10/2/2021"
+    },
+    {
+      "id": 12,
+      "fullName": "Nidhi Patel",
+      "gender": "Female",
+      "email": "nidhi@gmail.com",
+      "mobile": 1234575632,
+      "city": "Valsad",
+      "department": ".net",
+      "hireDate": "2/3/2021"
+    },
+    {
+      "id": 13,
+      "fullName": "Umang Tandel",
+      "gender": "Male",
+      "email": "umang@gmail.com",
+      "mobile": 4569875632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "2/2/2021"
+    },
+    {
+      "id": 14,
+      "fullName": "Pratik Tandel",
+      "gender": "Male",
+      "email": "pratik@gmail.com",
+      "mobile": 4563345632,
+      "city": "Valsad",
+      "department": "Angular",
+      "hireDate": "10/2/2021"
+    },
+    {
+      "id": 15,
+      "fullName": "Nidhi Patel",
+      "gender": "Female",
+      "email": "nidhi@gmail.com",
+      "mobile": 1234575632,
+      "city": "Valsad",
+      "department": ".net",
+      "hireDate": "2/3/2021"
+    },
+    {
+      "fullName": "wdqd",
+      "email": "qdqwd",
+      "mobile": "dqwdq",
+      "city": "qdqwd",
+      "gender": "female",
+      "department": ".net",
+      "hireDate": "2021-03-17",
+      "permanentEmployee": true,
+      "id": 16
+    },
+    {
+      "fullName": "dad",
+      "email": "fdef",
+      "mobile": "fefe",
+      "city": "fefe",
+      "gender": "male",
+      "department": "UI/UX",
+      "hireDate": "2021-04-01",
+      "permanentEmployee": true,
+      "id": 17
+    },
+    {
+      "fullName": "qdqd",
+      "email": "qdqw",
+      "mobile": "dqwdqwd",
+      "city": "qdwqwdq",
+      "gender": "female",
+      "department": ".net",
+      "hireDate": "2021-03-18",
+      "permanentEmployee": true,
+      "id": 18
+    }
+  ]
 }
