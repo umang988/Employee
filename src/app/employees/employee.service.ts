@@ -28,8 +28,10 @@ export class EmployeeService {
   public deleteEmployees(id : any ) : Observable<any>{
     return this.http.delete(this.url,id)
   }
-  public editEmployees(data : any, id: any ) : Observable<any>{
-    this.router.navigate(['employee']);
-    return this.http.put(`${this.url}/${id}`,data)
+  public editEmployees(data : any, id: any ) {
+    this.http.put(`${this.url}/${id}`,data).subscribe(()=>{
+      console.log("Done BRo");
+      this.router.navigate(['employee']);
+    })
   }
 }

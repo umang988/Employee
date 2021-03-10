@@ -12,12 +12,14 @@ import { Employee } from '../../employee.model';
 export class EmployeeAddPresentationComponent implements OnInit {
 
   public employeeForm : FormGroup;
-  private _employee: Employee; 
+  private _employee: Employee;
+  public isEditable : boolean = false;
 
   @Input() set employee(value : Employee){
     if(value){
       this._employee = value;
       this.setEmployeeDetails(value);
+      this.isEditable = true;
     }
   }
 
@@ -27,6 +29,11 @@ export class EmployeeAddPresentationComponent implements OnInit {
   }
 
   @Output() public employeeData : EventEmitter<any> = new EventEmitter();
+
+  @Output() public editEmployeeData : EventEmitter<any> = new EventEmitter();
+
+
+  
 
   constructor(private employeeAddPresenterService : EmployeeAddPresenterService) {
     this.employeeForm = this.employeeAddPresenterService.bindForm();
@@ -40,7 +47,12 @@ export class EmployeeAddPresentationComponent implements OnInit {
 
   }
   onSubmit(){
-    this.employeeData.emit(this.employeeForm.value)
+    if(!this.isEditable){
+      this.employeeData.emit(this.employeeForm.value)
+    }
+    else{
+      this.editEmployee();
+    }
     // this.employeeAddPresenterService.employeeDetail(this.employeeForm);
   }
   reset(){
@@ -52,8 +64,7 @@ export class EmployeeAddPresentationComponent implements OnInit {
     this.employeeForm.reset(value);
   }
 
-  editEmployee(data){
-    
-    this.employeeData.emit(data.value)
+  editEmployee(){    
+    this.editEmployeeData.emit(this.employeeForm.value)
   }
 }

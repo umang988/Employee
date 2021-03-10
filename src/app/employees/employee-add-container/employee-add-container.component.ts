@@ -39,8 +39,8 @@ export class EmployeeAddContainerComponent implements OnInit {
     
   }
 
-  editEmployeeData(employeeForm){
-    this.employeeService.editEmployees(employeeForm,this.editId)
+  editEmployeeData(data){
+    this.employeeService.editEmployees(data,this.editId)
   }
 
   getEmployee(id){
