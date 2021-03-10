@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Employee } from '../../employee.model';
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-employee-list-presentation',
@@ -14,7 +15,12 @@ export class EmployeeListPresentationComponent implements OnInit {
 
   @Input() employees : Employee;
 
+  @Output() removeEmployee : EventEmitter = new EventEmitter()
+
   ngOnInit(): void {
+  }
+
+  deleteEmployee($event){
   }
 
 }

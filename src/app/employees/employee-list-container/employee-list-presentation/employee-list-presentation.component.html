@@ -1,3 +1,5 @@
+<a routerLink='add'>Add Employee</a>
+
 <body>
     
     <table border="2">
@@ -8,13 +10,14 @@
             <th>City</th>
             <th>Department</th>
         </tr>
-        <tr *ngFor = "let emp of employees | paginate: { itemsPerPage: 5, currentPage: p } ">
+        <tr *ngFor = "let emp of employees | paginate: { itemsPerPage: 10, currentPage: p } ">
+
             <td> {{ emp.fullName }} </td>
             <td> {{ emp.email }} </td>
             <td> {{ emp.mobile }} </td>
             <td> {{ emp.city }}</td>
             <td> {{ emp.department }} </td>
-            <td> <button>Edit</button> <button>Delete</button></td>
+            <td> <button><a [routerLink]="['edit',emp.id]">Edit</a></button> <button (click)="deleteEmployee(emp.id)">Delete</button></td>
         </tr>
         <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </table>

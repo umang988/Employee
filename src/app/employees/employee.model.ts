@@ -8,23 +8,14 @@ export class Employee{
     public department : string;
     public hireDate : string;
 
-    constructor(
-        id : number,
-        fullName : string,
-        gender : string,
-        email : string,
-        mobile : number,
-        city : string,
-        department : string,
-        hireDate : string
-    ){
-        this.id=id;
-        this.fullName=fullName;
-        this.gender=gender;
-        this.email=email;
-        this.mobile=mobile;
-        this.city=city;
-        this.department=department;
-        this.hireDate=hireDate;
+    constructor(){
+        this.id=null;
+        this.fullName=null;
+        this.gender=null;
+        this.email=null;
+        this.mobile=null;
+        this.city=null;
+        this.department=null;
+        this.hireDate=null;
     }
 }

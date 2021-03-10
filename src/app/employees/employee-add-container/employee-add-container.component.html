@@ -1,1 +1,1 @@
-<app-employee-add-presentation (employeeData) = 'employeeData($event)'></app-employee-add-presentation>
+<app-employee-add-presentation [employee]="employee$|async" (employeeData) = 'employeeData($event)' (editEmployeeData) = 'editEmployeeData($event)'></app-employee-add-presentation>
